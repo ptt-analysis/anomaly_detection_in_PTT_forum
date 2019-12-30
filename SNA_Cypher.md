@@ -30,9 +30,9 @@
 
 **下載套件**
 
-[algo 套件版本需與neo4j版本相同](https://github.com/neo4j-contrib/neo4j-graph-algorithms/releases)
+[algo](https://github.com/neo4j-contrib/neo4j-graph-algorithms/releases) (套件版本需與neo4j版本相同)
 
-[apoc 套件版本需與neo4j版本相同](https://github.com/neo4j-contrib/neo4j-apoc-procedures/releases)
+[apoc](https://github.com/neo4j-contrib/neo4j-apoc-procedures/releases) (套件版本需與neo4j版本相同)
 
 
 
