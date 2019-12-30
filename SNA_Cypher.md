@@ -1,6 +1,7 @@
- # SNA 分析Cypher語法
+ ## SNA 分析Cypher語法
  
- ### 將欲讀取的csv放到neo4j下的資料夾import中
+ **將欲讀取的csv放到neo4j下的資料夾import中**
+ 
      //Load distinct ID
      //建立Node
      LOAD CSV WITH HEADERS FROM 'file:///id.csv' AS row
@@ -27,12 +28,14 @@
     return p
     limit 5
 
-### 下載套件
+**下載套件**
 [algo] (https://github.com/neo4j-contrib/neo4j-graph-algorithms/releases)
+
 [apoc] (https://github.com/neo4j-contrib/neo4j-apoc-procedures/releases)
+
 套件版本需與neo4j版本相同
 
-### 修改neo4j下資料夾conf中的neo4j.conf
+**修改neo4j下資料夾conf中的neo4j.conf**
 neo4j 3.4與neo4j 3.5的修改內容不同
 neo4j 3.4需新增以下兩行
     
@@ -43,13 +46,14 @@ neo4j 3.5則只新增以下一行
     
     dbms.security.procedures.unrestricted=algo.*,apoc.*
     
-### 修改neo4j.conf後需重啟neo4j
+**修改neo4j.conf後需重啟neo4j**
 於cmd中下指令
 
     bin\neo4j update-service
     bin\neo4j restart
 
-### 執行演算法
+**執行演算法**
+    
     //確認套件版本
     return apoc.version() 
 
