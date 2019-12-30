@@ -29,6 +29,7 @@
     limit 5
 
 **下載套件**
+
 [algo] (https://github.com/neo4j-contrib/neo4j-graph-algorithms/releases)
 
 [apoc] (https://github.com/neo4j-contrib/neo4j-apoc-procedures/releases)
@@ -36,7 +37,9 @@
 套件版本需與neo4j版本相同
 
 **修改neo4j下資料夾conf中的neo4j.conf**
+
 neo4j 3.4與neo4j 3.5的修改內容不同
+
 neo4j 3.4需新增以下兩行
     
     dbms.security.procedures.unrestricted=algo.*
@@ -47,6 +50,7 @@ neo4j 3.5則只新增以下一行
     dbms.security.procedures.unrestricted=algo.*,apoc.*
     
 **修改neo4j.conf後需重啟neo4j**
+
 於cmd中下指令
 
     bin\neo4j update-service
