@@ -35,16 +35,21 @@
 ### 修改neo4j下資料夾conf中的neo4j.conf
 neo4j 3.4與neo4j 3.5的修改內容不同
 neo4j 3.4需新增以下兩行
+    
     dbms.security.procedures.unrestricted=algo.*
     dbms.security.procedures.unrestricted=apoc.*
+
 neo4j 3.5則只新增以下一行 
+    
     dbms.security.procedures.unrestricted=algo.*,apoc.*
     
 ### 修改neo4j.conf後需重啟neo4j
 於cmd中下指令
-bin\neo4j update-service
-bin\neo4j restart
 
+    bin\neo4j update-service
+    bin\neo4j restart
+
+### 執行演算法
     //確認套件版本
     return apoc.version() 
 
