@@ -1,9 +1,9 @@
-//SNA 分析Cypher語法
-//將欲讀取的csv放到neo4j下的資料夾import中
-// Load distinct ID
-// 建立Node
-LOAD CSV WITH HEADERS FROM 'file:///id.csv' AS row
-create (:id {id:row.id})
+ //SNA 分析Cypher語法
+ //將欲讀取的csv放到neo4j下的資料夾import中
+ // Load distinct ID
+ // 建立Node
+ LOAD CSV WITH HEADERS FROM 'file:///id.csv' AS row
+ create (:id {id:row.id})
 
 
 //Create index
