@@ -3,7 +3,7 @@ Detect abnormal user on Taiwanese forum 'PTT'.
 
 # script description:
 #### step_1. Because the orginal result of crawler is json, we split to article and reply with csv format.
-#### step_2. Merge data and check time range.
+#### step_2. Merge data and check date range.
 #### step_3. Use self defined dict of political keywords to check article's political spectrum.
 #### step_4. Use neo4j to get community with interaction between PTT ID by modularity algorithms.
 #### step_5. Parse neo4j result of community to formal csv.
